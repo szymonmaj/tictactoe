@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<style>
+table, td {
+    border:1px solid black;
+}
+h2 {
+    color: green;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/main.css" />
+    <script type="text/javascript" th:src="@{/js/action.js}"></script>
 </head>
 <body>
+<h2>A basic HTML table</h2>
 
+<form action="#" th:action="@{/}" method="post">
+<table style="width:100%">
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+</table>
+</form>
 </body>
 </html>
