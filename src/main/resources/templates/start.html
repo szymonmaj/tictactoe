@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
 <style>
 table, td {
     border:1px solid black;
@@ -19,20 +19,31 @@ h2 {
 
 <form action="#" th:action="@{/}" method="post">
 <table style="width:100%">
+
     <tr>
         <td><input type="text"></td>
         <td><input type="text"></td>
         <td><input type="text"></td>
     </tr>
     <tr>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
+        <td><input type="text" value="B1" name="name"></td>
+        <td><input type="text" value="B2" name="name"></td>
+        <td><input type="text" value="B3" name="name"></td>
     </tr>
     <tr>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
+        <td><input type="text" value="C1" name="name"></td>
+        <td><input type="text" value="C2" name="name"></td>
+        <td><input type="text" value="C3" name="name"></td>
+    </tr>
+    <input type="submit"/><br/>
+
+    <tr>
+        <div th:switch="${ticActions.a}">
+            <td th:case="'a'"><input type="text" value="A1" name="name" th:text="${ticActions.A1}">x</td>
+            <td th:case="'b'"><input type="text" value="A2" name="name" th:text="${ticActions.A2}">x</td>
+            <td th:case="'c'"><input type="text" value="A3" name="name" th:text="${ticActions.A3}">x</td>
+            <td th:case="*"> </td>
+        </div>
     </tr>
 </table>
 </form>
