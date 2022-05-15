@@ -17,35 +17,56 @@ h2 {
 <body>
 <h2>A basic HTML table</h2>
 
-<form action="#" th:action="@{/}" method="post">
+<form action="#" th:action="@{/}" method="post" th:object="${ticActions}">
+
+
+<!--    <tr>-->
+<!--        <td><input type="text" th:field="*{a}"></td>-->
+<!--        <td><input type="text" th:field="*{b}"></td>-->
+<!--        <td><input type="text" th:field="*{c}"></td>-->
+<!--    </tr>-->
+    <input type="submit" value="A1" name="name"/>
+    <input type="submit" value="A2" name="name"/>
+    <input type="submit" value="A3" name="name"/><br/>
+    <input type="submit" value="B1" name="name"/>
+    <input type="submit" value="B2" name="name"/>
+    <input type="submit" value="B3" name="name"/><br/>
+    <input type="submit" value="C1" name="name"/>
+    <input type="submit" value="C2" name="name"/>
+    <input type="submit" value="C3" name="name"/><br/>
+    <input type="submit" value="Zeruj" name="name"/>
+<!--    <tr>-->
+<!--        <td><input type="text" value="B1" name="name"></td>-->
+<!--        <td><input type="text" value="B2" name="name"></td>-->
+<!--        <td><input type="text" value="B3" name="name"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><input type="text" value="C1" name="name"></td>-->
+<!--        <td><input type="text" value="C2" name="name"></td>-->
+<!--        <td><input type="text" value="C3" name="name"></td>-->
+<!--    </tr>-->
+
+</form>
+
 <table style="width:100%">
 
     <tr>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
+        <td><input type="text" th:value="${ticActions.A1}"></td>
+        <td><input type="text" th:value="${ticActions.A2}"></td>
+        <td><input type="text" th:value="${ticActions.A3}"></td>
     </tr>
     <tr>
-        <td><input type="text" value="B1" name="name"></td>
-        <td><input type="text" value="B2" name="name"></td>
-        <td><input type="text" value="B3" name="name"></td>
+        <td><input type="text" th:value="${ticActions.B1}"></td>
+        <td><input type="text" th:value="${ticActions.B2}"></td>
+        <td><input type="text" th:value="${ticActions.B3}"></td>
     </tr>
     <tr>
-        <td><input type="text" value="C1" name="name"></td>
-        <td><input type="text" value="C2" name="name"></td>
-        <td><input type="text" value="C3" name="name"></td>
-    </tr>
-    <input type="submit"/><br/>
-
-    <tr>
-        <div th:switch="${ticActions.a}">
-            <td th:case="'a'"><input type="text" value="A1" name="name" th:text="${ticActions.A1}">x</td>
-            <td th:case="'b'"><input type="text" value="A2" name="name" th:text="${ticActions.A2}">x</td>
-            <td th:case="'c'"><input type="text" value="A3" name="name" th:text="${ticActions.A3}">x</td>
-            <td th:case="*"> </td>
-        </div>
+        <td><input type="text" th:value="${ticActions.C1}"></td>
+        <td><input type="text" th:value="${ticActions.C2}"></td>
+        <td><input type="text" th:value="${ticActions.C3}"></td>
     </tr>
 </table>
-</form>
+<!--<td><input type="text" th:if="${ticActions.a} ? 'x' : 'y'"></td>-->
+<!--<button><a href="/" class="btn right">Zeruj</a></button>-->
 </body>
 </html>
