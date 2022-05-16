@@ -23,50 +23,276 @@ public class TicController {
 
         if (name.equals("A1")){
             ticActions.xa = "X";
-            if (ticActions.xc.equals(" ")){
-                ticActions.xc = "O";
+            if (!ticActions.xb.equals(" ") && !ticActions.xc.equals(" ") && !ticActions.xd.equals(" ") && !ticActions.xe.equals(" ") && !ticActions.xf.equals(" ") && !ticActions.xg.equals(" ") && !ticActions.xh.equals(" ") && !ticActions.xi.equals(" ")){
+                return "start";
             }
-            else {
-                if (ticActions.xi.equals(" ")) {
-                    ticActions.xi = "O";
-                }
                 else {
-                    if (ticActions.xg.equals(" ")) {
-                        ticActions.xg = "O";
-                    }
-                    else {
-                        if (ticActions.xg.equals(" ")) {
-                            ticActions.xg = "O";
+                    if (ticActions.xb.equals(" ") && ticActions.xc.equals(" ") && ticActions.xd.equals(" ") && ticActions.xe.equals(" ") && ticActions.xf.equals(" ") && ticActions.xg.equals(" ") && ticActions.xh.equals(" ") && ticActions.xi.equals(" ")){
+                        ticActions.xi = "O";
+                        return "start";
                         }
                         else {
-                            if (ticActions.xb.equals(" ")) {
-                                ticActions.xb = "O";
-                            }
-                            else {
-                                if (ticActions.xd.equals(" ")) {
-                                    ticActions.xd = "O";
-                                }
-                                else {
-                                    if (ticActions.xe.equals(" ")) {
-                                        ticActions.xe = "O";
+                            if (ticActions.xb.equals("X") || ticActions.xc.equals("X") || ticActions.xd.equals("X") || ticActions.xg.equals("X")) {
+                                if (ticActions.xb.equals("X")){
+                                    if (ticActions.xc.equals(" ")) {
+                                        ticActions.xc = "O";
+                                        return "start";
                                     }
                                     else {
-                                        if (ticActions.xf.equals(" ")) {
-                                            ticActions.xf = "O";
+                                        if (ticActions.xe.equals(" ")) {
+                                            ticActions.xe = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xi.equals(" ")) {
+                                            ticActions.xi = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xg.equals(" ")) {
+                                            ticActions.xg = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xd.equals(" ")) {
+                                            ticActions.xd = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xh.equals(" ")) {
+                                            ticActions.xh = "O";
+                                            return "start";
                                         }
                                         else {
-                                            if (ticActions.xh.equals(" ")) {
-                                                ticActions.xh = "O";
-                                            }
+                                            ticActions.xf = "O";
+                                            return "start";
                                         }
                                     }
                                 }
+                                if (ticActions.xc.equals("X")){
+                                    if (ticActions.xb.equals(" ")) {
+                                        ticActions.xb = "O";
+                                        return "start";
+                                    }
+                                    else {
+                                        if (ticActions.xe.equals(" ")) {
+                                            ticActions.xe = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xi.equals(" ")) {
+                                            ticActions.xi = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xg.equals(" ")) {
+                                            ticActions.xg = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xd.equals(" ")) {
+                                            ticActions.xd = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xh.equals(" ")) {
+                                            ticActions.xh = "O";
+                                            return "start";
+                                        }
+                                        else {
+                                            ticActions.xf = "O";
+                                            return "start";
+                                        }
+                                    }
+                                }
+                                if (ticActions.xd.equals("X")) {
+                                    if (ticActions.xg.equals(" ")) {
+                                        ticActions.xg = "O";
+                                        return "start";
+                                    } else {
+                                        if (ticActions.xe.equals(" ")) {
+                                            ticActions.xe = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xi.equals(" ")) {
+                                            ticActions.xi = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xc.equals(" ")) {
+                                            ticActions.xc = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xb.equals(" ")) {
+                                            ticActions.xb = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xh.equals(" ")) {
+                                            ticActions.xh = "O";
+                                            return "start";
+                                        }
+                                        else {
+                                            ticActions.xf = "O";
+                                            return "start";
+                                        }
+                                    }
+                                }
+                                        else {
+                                            if (ticActions.xd.equals(" ")) {
+                                                ticActions.xd = "O";
+                                                return "start";
+                                            }
+                                            else {
+                                                if (ticActions.xe.equals(" ")) {
+                                                    ticActions.xe = "O";
+                                                    return "start";
+                                                }
+                                                if (ticActions.xi.equals(" ")) {
+                                                    ticActions.xi = "O";
+                                                    return "start";
+                                                }
+                                                if (ticActions.xc.equals(" ")) {
+                                                    ticActions.xc = "O";
+                                                    return "start";
+                                                }
+                                                if (ticActions.xb.equals(" ")) {
+                                                    ticActions.xb = "O";
+                                                    return "start";
+                                                }
+                                                if (ticActions.xh.equals(" ")) {
+                                                    ticActions.xh = "O";
+                                                    return "start";
+                                                }
+                                                else {
+                                                    ticActions.xf = "O";
+                                                    return "start";
+                                                }
+                                            }
+                                        }
                             }
-                        }
+                            else {
+                                if (ticActions.xe.equals("X")){
+                                    if (ticActions.xi.equals(" ")) {
+                                        ticActions.xi = "O";
+                                        return "start";
+                                    }
+                                    else {
+                                        if (ticActions.xc.equals(" ")) {
+                                            ticActions.xc = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xg.equals(" ")) {
+                                            ticActions.xg = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xb.equals(" ")) {
+                                            ticActions.xb = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xd.equals(" ")) {
+                                            ticActions.xd = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xh.equals(" ")) {
+                                            ticActions.xh = "O";
+                                            return "start";
+                                        }
+                                        else {
+                                            ticActions.xf = "O";
+                                            return "start";
+                                        }
+                                    }
+                                }
+                                if (ticActions.xi.equals("X")){
+                                    if (ticActions.xe.equals(" ")) {
+                                        ticActions.xe = "O";
+                                        return "start";
+                                    }
+                                    else {
+                                        if (ticActions.xc.equals(" ")) {
+                                            ticActions.xc = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xg.equals(" ")) {
+                                            ticActions.xg = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xb.equals(" ")) {
+                                            ticActions.xb = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xd.equals(" ")) {
+                                            ticActions.xd = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xh.equals(" ")) {
+                                            ticActions.xh = "O";
+                                            return "start";
+                                        }
+                                        else {
+                                            ticActions.xf = "O";
+                                            return "start";
+                                        }
+                                    }
+                                }
+                                if (ticActions.xf.equals("X")) {
+                                    if (ticActions.xe.equals(" ")) {
+                                        ticActions.xe = "O";
+                                        return "start";
+                                    }
+                                    else {
+                                        if (ticActions.xi.equals(" ")) {
+                                            ticActions.xi = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xc.equals(" ")) {
+                                            ticActions.xc = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xb.equals(" ")) {
+                                            ticActions.xb = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xd.equals(" ")) {
+                                            ticActions.xd = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xh.equals(" ")) {
+                                            ticActions.xh = "O";
+                                            return "start";
+                                        }
+                                        else {
+                                            ticActions.xg = "O";
+                                            return "start";
+                                        }
+                                    }
+                                }
+                                else {
+                                        if (ticActions.xe.equals(" ")) {
+                                            ticActions.xe = "O";
+                                            return "start";
+                                        }
+                                        else {
+                                            if (ticActions.xi.equals(" ")) {
+                                                ticActions.xi = "O";
+                                                return "start";
+                                            }
+                                            if (ticActions.xc.equals(" ")) {
+                                                ticActions.xc = "O";
+                                                return "start";
+                                            }
+                                            if (ticActions.xb.equals(" ")) {
+                                                ticActions.xb = "O";
+                                                return "start";
+                                            }
+                                            if (ticActions.xd.equals(" ")) {
+                                                ticActions.xd = "O";
+                                                return "start";
+                                            }
+                                            if (ticActions.xf.equals(" ")) {
+                                                ticActions.xf = "O";
+                                                return "start";
+                                            }
+                                            else {
+                                                ticActions.xg = "O";
+                                                return "start";
+                                            }
+                                        }
+                                }
+                            }
                     }
-                }
             }
-            return "start";
         }
         if (name.equals("A2")){
             ticActions.xb = "X";

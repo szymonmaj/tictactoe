@@ -11,23 +11,23 @@ public class TicActions {
     public static String xh = " ";
     public static String xi = " ";
 
-    public String A1() { return xa; }
-
-    public String A2() { return xb; }
-
-    public String A3() { return xc; }
-
-    public String B1() { return xd; }
-
-    public String B2() { return xe; }
-
-    public String B3() { return xf; }
-
-    public String C1() { return xg; }
-
-    public String C2() { return xh; }
-
-    public String C3() { return xi; }
+//    public String A1() { return xa; }
+//
+//    public String A2() { return xb; }
+//
+//    public String A3() { return xc; }
+//
+//    public String B1() { return xd; }
+//
+//    public String B2() { return xe; }
+//
+//    public String B3() { return xf; }
+//
+//    public String C1() { return xg; }
+//
+//    public String C2() { return xh; }
+//
+//    public String C3() { return xi; }
 
     public static String getXa() {
         return xa;
