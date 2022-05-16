@@ -28,7 +28,7 @@ public class TicController {
             }
                 else {
                     if (ticActions.xb.equals(" ") && ticActions.xc.equals(" ") && ticActions.xd.equals(" ") && ticActions.xe.equals(" ") && ticActions.xf.equals(" ") && ticActions.xg.equals(" ") && ticActions.xh.equals(" ") && ticActions.xi.equals(" ")){
-                        ticActions.xi = "O";
+                        ticActions.xe = "O";
                         return "start";
                         }
                         else {
@@ -39,10 +39,6 @@ public class TicController {
                                         return "start";
                                     }
                                     else {
-                                        if (ticActions.xe.equals(" ")) {
-                                            ticActions.xe = "O";
-                                            return "start";
-                                        }
                                         if (ticActions.xi.equals(" ")) {
                                             ticActions.xi = "O";
                                             return "start";
@@ -71,10 +67,6 @@ public class TicController {
                                         return "start";
                                     }
                                     else {
-                                        if (ticActions.xe.equals(" ")) {
-                                            ticActions.xe = "O";
-                                            return "start";
-                                        }
                                         if (ticActions.xi.equals(" ")) {
                                             ticActions.xi = "O";
                                             return "start";
@@ -102,10 +94,6 @@ public class TicController {
                                         ticActions.xg = "O";
                                         return "start";
                                     } else {
-                                        if (ticActions.xe.equals(" ")) {
-                                            ticActions.xe = "O";
-                                            return "start";
-                                        }
                                         if (ticActions.xi.equals(" ")) {
                                             ticActions.xi = "O";
                                             return "start";
@@ -134,10 +122,6 @@ public class TicController {
                                                 return "start";
                                             }
                                             else {
-                                                if (ticActions.xe.equals(" ")) {
-                                                    ticActions.xe = "O";
-                                                    return "start";
-                                                }
                                                 if (ticActions.xi.equals(" ")) {
                                                     ticActions.xi = "O";
                                                     return "start";
@@ -195,15 +179,11 @@ public class TicController {
                                     }
                                 }
                                 if (ticActions.xi.equals("X")){
-                                    if (ticActions.xe.equals(" ")) {
-                                        ticActions.xe = "O";
+                                    if (ticActions.xc.equals(" ")) {
+                                        ticActions.xc = "O";
                                         return "start";
                                     }
                                     else {
-                                        if (ticActions.xc.equals(" ")) {
-                                            ticActions.xc = "O";
-                                            return "start";
-                                        }
                                         if (ticActions.xg.equals(" ")) {
                                             ticActions.xg = "O";
                                             return "start";
@@ -227,17 +207,17 @@ public class TicController {
                                     }
                                 }
                                 if (ticActions.xf.equals("X")) {
-                                    if (ticActions.xe.equals(" ")) {
-                                        ticActions.xe = "O";
+                                    if (ticActions.xi.equals(" ")) {
+                                        ticActions.xi = "O";
                                         return "start";
                                     }
                                     else {
-                                        if (ticActions.xi.equals(" ")) {
-                                            ticActions.xi = "O";
-                                            return "start";
-                                        }
                                         if (ticActions.xc.equals(" ")) {
                                             ticActions.xc = "O";
+                                            return "start";
+                                        }
+                                        if (ticActions.xg.equals(" ")) {
+                                            ticActions.xg = "O";
                                             return "start";
                                         }
                                         if (ticActions.xb.equals(" ")) {
@@ -248,28 +228,24 @@ public class TicController {
                                             ticActions.xd = "O";
                                             return "start";
                                         }
-                                        if (ticActions.xh.equals(" ")) {
-                                            ticActions.xh = "O";
-                                            return "start";
-                                        }
                                         else {
-                                            ticActions.xg = "O";
+                                            ticActions.xh = "O";
                                             return "start";
                                         }
                                     }
                                 }
                                 else {
-                                        if (ticActions.xe.equals(" ")) {
-                                            ticActions.xe = "O";
+                                        if (ticActions.xi.equals(" ")) {
+                                            ticActions.xi = "O";
                                             return "start";
                                         }
                                         else {
-                                            if (ticActions.xi.equals(" ")) {
-                                                ticActions.xi = "O";
-                                                return "start";
-                                            }
                                             if (ticActions.xc.equals(" ")) {
                                                 ticActions.xc = "O";
+                                                return "start";
+                                            }
+                                            if (ticActions.xg.equals(" ")) {
+                                                ticActions.xg = "O";
                                                 return "start";
                                             }
                                             if (ticActions.xb.equals(" ")) {
@@ -280,12 +256,8 @@ public class TicController {
                                                 ticActions.xd = "O";
                                                 return "start";
                                             }
-                                            if (ticActions.xf.equals(" ")) {
-                                                ticActions.xf = "O";
-                                                return "start";
-                                            }
                                             else {
-                                                ticActions.xg = "O";
+                                                ticActions.xf = "O";
                                                 return "start";
                                             }
                                         }

@@ -10,6 +10,7 @@ public class TicActions {
     public static String xg = " ";
     public static String xh = " ";
     public static String xi = " ";
+    public String kom;
 
 //    public String A1() { return xa; }
 //
@@ -28,6 +29,22 @@ public class TicActions {
 //    public String C2() { return xh; }
 //
 //    public String C3() { return xi; }
+
+    public String sprawdzenie(){
+        if (xa.equals("O") && xb.equals("O") && xc.equals("O") || xd.equals("O") && xe.equals("O") && xf.equals("O") || xg.equals("O") && xh.equals("O") && xi.equals("O") || xa.equals("O") && xe.equals("O") && xi.equals("O") || xc.equals("O") && xe.equals("O") && xg.equals("O")){
+            kom = "Game over, O win";
+        }
+
+        return kom;
+    }
+
+    public String getKom() {
+        return kom;
+    }
+
+    public void setKom(String kom) {
+        this.kom = kom;
+    }
 
     public static String getXa() {
         return xa;
