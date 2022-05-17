@@ -34,8 +34,10 @@ public class TicActions {
         if (xa.equals("O") && xb.equals("O") && xc.equals("O") || xd.equals("O") && xe.equals("O") && xf.equals("O") || xg.equals("O") && xh.equals("O") && xi.equals("O") || xa.equals("O") && xe.equals("O") && xi.equals("O") || xc.equals("O") && xe.equals("O") && xg.equals("O")){
             kom = "Game over, O win";
         }
-
-        return kom;
+        if (!xa.equals(" ") && !xb.equals(" ") && !xc.equals(" ") && !xd.equals(" ") && !xe.equals(" ") && !xf.equals(" ") && !xg.equals(" ") && !xh.equals(" ") && !xi.equals(" ")) {
+            kom = "DRAW";
+        }
+            return kom;
     }
 
     public String getKom() {
