@@ -12,24 +12,6 @@ public class TicActions {
     public static String xi = " ";
     public String kom;
 
-//    public String A1() { return xa; }
-//
-//    public String A2() { return xb; }
-//
-//    public String A3() { return xc; }
-//
-//    public String B1() { return xd; }
-//
-//    public String B2() { return xe; }
-//
-//    public String B3() { return xf; }
-//
-//    public String C1() { return xg; }
-//
-//    public String C2() { return xh; }
-//
-//    public String C3() { return xi; }
-
     public String sprawdzenie(){
         if (xa.equals("O") && xb.equals("O") && xc.equals("O") || xd.equals("O") && xe.equals("O") && xf.equals("O") || xg.equals("O") && xh.equals("O") && xi.equals("O") || xa.equals("O") && xe.equals("O") && xi.equals("O") || xc.equals("O") && xe.equals("O") && xg.equals("O")){
             kom = "Game over, O win";
