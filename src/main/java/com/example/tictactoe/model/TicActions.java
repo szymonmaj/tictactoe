@@ -1,4 +1,4 @@
-package com.example.tictactoe;
+package com.example.tictactoe.model;
 
 public class TicActions {
     public static String xa = " ";
@@ -18,11 +18,12 @@ public class TicActions {
         }
         if (xa.equals("X") && xb.equals("X") && xc.equals("X") || xd.equals("X") && xe.equals("X") && xf.equals("X") || xg.equals("X") && xh.equals("X") && xi.equals("X") || xa.equals("X") && xe.equals("X") && xi.equals("X") || xc.equals("X") && xe.equals("X") && xg.equals("X") || xa.equals("X") && xd.equals("X") && xg.equals("X") || xb.equals("X") && xe.equals("X") && xh.equals("X") || xc.equals("X") && xf.equals("X") && xi.equals("X")){
             kom = "Game over, X win";
+            return kom;
         }
         if (!xa.equals(" ") && !xb.equals(" ") && !xc.equals(" ") && !xd.equals(" ") && !xe.equals(" ") && !xf.equals(" ") && !xg.equals(" ") && !xh.equals(" ") && !xi.equals(" ")) {
             kom = "DRAW";
         }
-            return kom;
+        return kom;
     }
 
     public String getKom() {
@@ -32,77 +33,4 @@ public class TicActions {
     public void setKom(String kom) {
         this.kom = kom;
     }
-
-    public static String getXa() {
-        return xa;
-    }
-
-    public static void setXa(String xa) {
-        TicActions.xa = xa;
-    }
-
-    public static String getXb() {
-        return xb;
-    }
-
-    public static void setXb(String xb) {
-        TicActions.xb = xb;
-    }
-
-    public static String getXc() {
-        return xc;
-    }
-
-    public static void setXc(String xc) {
-        TicActions.xc = xc;
-    }
-
-    public String getXd() {
-        return xd;
-    }
-
-    public void setXd(String xd) {
-        this.xd = xd;
-    }
-
-    public String getXe() {
-        return xe;
-    }
-
-    public void setXe(String xe) {
-        this.xe = xe;
-    }
-
-    public String getXf() {
-        return xf;
-    }
-
-    public void setXf(String xf) {
-        this.xf = xf;
-    }
-
-    public String getXg() {
-        return xg;
-    }
-
-    public void setXg(String xg) {
-        this.xg = xg;
-    }
-
-    public String getXh() {
-        return xh;
-    }
-
-    public void setXh(String xh) {
-        this.xh = xh;
-    }
-
-    public String getXi() {
-        return xi;
-    }
-
-    public void setXi(String xi) {
-        this.xi = xi;
-    }
-
 }
